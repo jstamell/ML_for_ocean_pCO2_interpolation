@@ -10,16 +10,16 @@ Using the Large Enemble Testbed, a collection of 100 members from four independe
 
 Steps to recreate this analysis
 ------------
-	1. Clone the github repo: https://github.com/jstamell/ML_for_ocean_pCO2_interpolation
-	2. Download data files from figshare and place in specified directories:
-		a. /data/raw - raw ensemble member data in netcdf format - https://figshare.com/collections/Large_ensemble_pCO2_testbed/4568555
-		b. /data/processed - Processed data stored in pandas dataframes
-		c. /models/trained - Trained models, serialized in pickle or h5 format depending on the algorithm 
-		d. /models/reconstructions - pCO2 reconstructions in netcdf format
-		e. /models/performance_metrics/map_data_approach.pickle - map data for output plots
-		f. /models/performance_metrics/map_data_ens.pickle - map data for output plots
-	3. Follow the sequence of jupyter notebooks to recreate any of the files included in these repositories, aside from the raw data or jump to notebook 07_output_analysis.ipynb to explore the results
-		a. The top of each notebook contains the values that should be adjusted by the user; this is typically just setting the path to the project's root directory on your system
+- Clone the github repo: https://github.com/jstamell/ML_for_ocean_pCO2_interpolation
+- Download data files from figshare and place in specified directories:
+	- /data/raw - raw ensemble member data in netcdf format - https://figshare.com/collections/Large_ensemble_pCO2_testbed/4568555
+	- /data/processed - Processed data stored in pandas dataframes
+	- /models/trained - Trained models, serialized in pickle or h5 format depending on the algorithm 
+	- /models/reconstructions - pCO2 reconstructions in netcdf format
+	- /models/performance_metrics/map_data_approach.pickle - map data for output plots
+	- /models/performance_metrics/map_data_ens.pickle - map data for output plots
+- Follow the sequence of jupyter notebooks to recreate any of the files included in these repositories, aside from the raw data or jump to notebook 07_output_analysis.ipynb to explore the results
+	- The top of each notebook contains the values that should be adjusted by the user; this is typically just setting the path to the project's root directory on your system
 
 Other notes
 ------------
@@ -31,13 +31,13 @@ Project Organization
 ------------
 
     ├── LICENSE
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── README.md          
 	├── requirements.txt   <- Python module versions used
     ├── data
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   ├── processed      <- The processed data sets used for modeling (available at <insert link>)
+    │   └── raw            <- The original LET member data (available at https://figshare.com/collections/Large_ensemble_pCO2_testbed/4568555)
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── models             <- Trained and serialized models, model predictions, and performance metrics (available at <insert link>)
     │
     ├── notebooks          <- Jupyter notebooks for recreating this analysis
     │
